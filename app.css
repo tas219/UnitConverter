@@ -1,0 +1,73 @@
+body{
+    background-color: #c2d9c1;
+    margin: 0;
+}
+
+.headerText{
+    background-color: #839e83;
+    color: #232a23;
+    font-family: 'Bodoni MT', 'Calisto MT', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:x-large;
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#top{
+    text-align: center;
+
+}
+.topButtons{
+    background-color: #caa78a;
+    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 0px;
+    border-radius: 3px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 5px;
+    width: 90px;
+    
+}
+
+#container{
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    font-family: 'Segoe UI',  sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #e8fce8;
+    border-radius: 20px;
+    padding: 30px;
+}
+.selector{
+    display: inline-block; margin-right: 10px;
+}
+select{
+    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    border: 2px;
+    border-color: #232a23;
+    border-radius: 3px;
+    padding: 5px;
+    width: auto;
+}
+.field{
+    display: inline-block;
+}
+.fieldBox{
+    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    border: 2px;
+    border-color: #232a23;
+    border-radius: 3px;
+    padding: 5px;
+    width: 150px;
+}
+

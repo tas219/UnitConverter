@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free unit converter for several unit types">
+    <meta name="keywords" content="unit, unit conversion, unit converter">
+    <meta name="author" content="Taisia Zhizhina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="headerText">
+        <h1>Unit Converter</h1>
+    </div>
+<!--Buttons that determine what unit thing you are looking at-->
+    <div id="top">
+        <button class="topButtons" id = "btn0" onclick="changeMode(this, 0)">area</button>
+        <button class="topButtons" id = "btn1" onclick="changeMode(this, 1)" disabled>currency</button>
+        <button class="topButtons" id = "btn2" onclick="changeMode(this, 2)">length</button>
+        <button class="topButtons" id = "btn3" onclick="changeMode(this, 3)">mass</button>
+        <button class="topButtons" id = "btn4" onclick="changeMode(this, 4)">speed</button>
+        <button class="topButtons" id = "btn5" onclick="changeMode(this, 5)">temperature</button>  
+        <button class="topButtons" id = "btn6" onclick="changeMode(this, 6)">time</button>
+        <button class="topButtons" id = "btn7" onclick="changeMode(this, 7)" disabled>volume</button>
+        
+    </div>
+    <br>
+<!--selector and input for the first unit-->
+    <div id="container">
+        <div class="content1"> 
+            <!--selector part-->
+            <div class="selector">
+                <label for="Unit1">Unit 1</label>
+                <select id="Unit1" name="Unit1">
+                    <option></option>
+                </select>
+            </div>
+            <!--number field part-->
+            <div class="field">
+                <form>
+                <label for="val1">: </label>
+                <input type="Number" id="val1" name="val1" placeholder=0 class="fieldBox" disabled>
+                </form>
+            </div>
+            
+            
+        </div>
+        <div class="content1">
+            <p>To</p>
+        </div>
+        <!--selector and output for the second unit-->
+        <div class="content1">
+            <!--selector part-->
+            <div class="selector">
+                <label for="Unit2">Unit 2</label>
+                <select id="Unit2" name="Unit2">
+                    <option></option>
+                </select>
+            </div>
+            <!--number field part-->
+            <div class="field">
+                <form>
+                <label for="val2">: </label>
+                <input type="Number" id="val2" name="val2" placeholder=0 class="fieldBox" disabled>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

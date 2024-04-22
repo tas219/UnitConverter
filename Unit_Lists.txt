@@ -1,0 +1,22 @@
+Area: "Squared Kilometer", "Squared Meter", "Squared Mile", "Squared Yard", "Squared Foot", "Squared Inch", "Hectare", "Acre"
+
+Length: "Kilometer", "Meter", "Centimeter", "Millimeter", "Nanometer", "Mile", "Yard", "Foot", "Inch", "Nautical Mile"
+
+Mass: "Tonne", "Kilogram", "Gram", "Milligram", "Microgram", "Imperial Ton", "US Ton", "Stone", "Pound", "Ounce"
+
+Speed: "Miles/Hour", "Foot/Second", "Meter/Second", "Kilometer/Hour", "Knot"
+
+Temperature: "C", "F", "K"
+
+Time: "Nanosecond", "Microsecond", "Millisecond", "Second", "Minute", "Hour"
+
+Volume: "I Hate Them >:/"
+
+Area
+Currency
+Length
+Mass
+Speed
+Temperature
+Time
+Volume
