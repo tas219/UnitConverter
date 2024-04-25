@@ -11,6 +11,9 @@ Obviously each step builds on the previous one. I started with converting temper
 
 Anyways after I build a solid temperature unit converter I started working on step 3 which deffinetly took some time (couple of days) because a lot of stuff kept breaking (notably I accidentally used = in an if statement instead of == and was super confused when one of the variables kept being reassigned to a value out of nowhere, which is crazy because Java would have given me an error for that so fast and so much time would have been saved). Anyways, I am a little proud of how all the stuff is organized. I tried to reduce the code as much as I could, but you know, I am still closer to the beginner level so maybe some of it isn't as efficient as I think or as it could be. Notably, I like how I managed to change the colour of the buttons (specifically changing back the colour of the previous button). Overall, the changeMode method I think is kinda cute. I thought that the fact that java script had the option of having an array of functions was super cool and I used it to call the different conversion functions (Mode acting as an index so there is no need to check what the mode is and call the function in a switch guy). Though I wish js had an enum class like in C so that mode could have an int value, but also be more clear in what value is what. I used an array of strings to put in the options though perhaps it would have been a JSON file. Also I have been writing all the conversion functions by hand using the aforementioned method and wowza it's a lot of code that looks very redundant, but what can you do if all the conversions are unique. Honestly, I feel like this might not be the best way to achieve what I want, but I cannot think of anything better. 
 
+For step 4 I used https://www.frankfurter.app/docs/ API and that's about as much as there is to say about that. 
+
 Okay thats all for now. 
+
 Love, 
 Tasya Zhizhina
