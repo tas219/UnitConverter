@@ -20,7 +20,7 @@ body{
 }
 .topButtons{
     background-color: #caa78a;
-    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-family: 'Segoe UI',  sans-serif;
     font-weight: 600;
     text-transform: capitalize;
     border: 0px;
@@ -48,7 +48,7 @@ body{
     display: inline-block; margin-right: 10px;
 }
 select{
-    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-family: 'Segoe UI',  sans-serif;
     font-weight: 600;
     font-size: 25px;
     border: 2px;
@@ -61,7 +61,7 @@ select{
     display: inline-block;
 }
 .fieldBox{
-    font-family: 'Gallisans', 'Segoe UI',  sans-serif;
+    font-family: 'Segoe UI',  sans-serif;
     font-weight: 600;
     font-size: 25px;
     border: 2px;
