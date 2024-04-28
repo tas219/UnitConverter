@@ -1,6 +1,6 @@
 /**
  * Script file :D
- * last updated: Apr 24 2024
+ * last updated: Apr 28 2024
  * @author Taisia Zhizhina
  */
 
@@ -122,8 +122,6 @@ function callConvert(bool)
  * @returns formatted version of n
  */
 function formatOutput(n){
-    if(mode == 1 ) {return Math.round(n*100)/100;}
-
     if((Math.abs(n) > 99999 || Math.abs(n) < 0.0001)){
         n = n.toExponential(4);
     }
@@ -276,7 +274,7 @@ function convertCurrency(bool){
         .then((val) => val.json())
         .then((val) => {
             //update appropriate field with output value
-            value2.value = Object.values(val.rates)[0];
+            value2.value = Math.round(Object.values(val.rates)[0]*100)/100;
         });
     }
     //if bottom box is the input
@@ -287,7 +285,7 @@ function convertCurrency(bool){
         .then((val) => val.json())
         .then((val) => {
             //update appropriate field with output value
-            value1.value = Object.values(val.rates)[0];
+            value1.value = Math.round(Object.values(val.rates)[0]*100)/100;
         });
     }
 
