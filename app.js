@@ -44,27 +44,31 @@ function fillOptions(arr){
         //for some reason if I try to append option consecutively it only works for the second one
         //making a second option variable fixed it though
         //note sure if there is another fix
+
+        //create new option
         let opt = document.createElement("option");
         let opt2 = document.createElement("option");
-        if(mode != 1)
+        if(mode != 1) //if its not currency
         {
+            //text is string from array, value is element index in array
             opt.text = arr[i];
             opt.value = i;
             opt2.text = arr[i];
             opt2.value = i;
         }
-        else{
+        else{//mode is currency
+            //text is currency full name, value is currency abreviation 
             opt.text = arr[i][1];
             opt.value = arr[i][0];
             opt2.text = arr[i][1];
             opt2.value = arr[i][0];
         }
-            
+        //add to unit 1 and to unit2
         unit1.appendChild(opt);
         unit2.appendChild(opt2);
-        
     }
-    
+    //starts off with the two units being different (the first and second elements in the array)
+    unit2.value = (mode != 1) ? 1 : arr[1][0]; 
 }
 
 /**
@@ -74,11 +78,12 @@ function fillOptions(arr){
 function callConvert(bool)
 {
     console.log("Call Convert Called, Mode: " + mode);
-    if(mode == -1){
-        console.log("Call Convert -1 if statement");
+    if(mode == -1){//in default mode, shouldnt do anything
+        console.log("Call Convert -1 if statement"); 
         return;
     } 
     
+    //local values 
     let u1 = unit1.value;
     let u2 = unit2.value;
     let v1 = value1.value;
@@ -92,16 +97,16 @@ function callConvert(bool)
         value2.value = "";
         return;
     }
-    if(mode == 1){
+    if(mode == 1){//currency convert is special
         conv_funcs[mode](bool);
     }
-    else if(bool){
+    else if(bool){//top field was changed
         v1 = value1.value;
         v2 = conv_funcs[mode](v1, u1, u2);
         v2 = formatOutput(v2);
         value2.value = v2;
     }
-    else{
+    else{//bottom field was changed
         v1 = value2.value;
         v2 = conv_funcs[mode](v1, u2, u1);
         v2 = formatOutput(v2);
@@ -133,7 +138,7 @@ function formatOutput(n){
 
 //--------------------button stuff-----------------------------------------------
 /**
- * Function 
+ * Event function for the mode buttons
  * @param {*} btnObj button obj that was pressed
  * @param {int} i Mode associated with button that was pressed
  */
@@ -153,7 +158,7 @@ function changeMode(btnObj, i){
     }
     mode = i;//set current mode
     //change button colour
-    btnObj.style.background = "#a87a54";
+    btnObj.style.background = "#bb885e";
     //clear text fields
     value1.value = "";
     value2.value = "";
